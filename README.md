@@ -2,7 +2,7 @@
 
 #### 无法编译通过，修改的地方如下：
 
-1. 因无法正常生成ros消息的头文件，我在另一个package里生成了之后复制到`~/catkin_ws/src/lsd_slam/lsd_slam_viewer/src`，这两个文件为`keyframeMsg.h、keyframeGraphMsg.h`。
+1. 因无法正常生成ros消息的头文件，我在另一个package里生成了之后将`keyframeMsg.h、keyframeGraphMsg.h`两个文件复制到`~/catkin_ws/src/lsd_slam/lsd_slam_viewer/src`。
 
 2. 原程序总是有#include错误，如`#include "lsd_slam_viewer/KeyFrameDisplay.h"`，我把所有的`lsd_slam_viewer/`都删掉了。
 
